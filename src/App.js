@@ -1,14 +1,12 @@
 import "./App.css";
-import gsap from "gsap";
-import Stalactite from "./components/stalactite";
-import { useGSAP } from "@gsap/react";
 
-gsap.registerPlugin(useGSAP);
-
+import AnimatedButton from "./components/button";
 function App() {
   return (
     <div className="App">
-      <Stalactite />
+      <AnimatedButton classNames={"blue button"}>Blue</AnimatedButton>
+      <AnimatedButton classNames={"red button"}> Red</AnimatedButton>
+      <AnimatedButton classNames={"green button"}>Green</AnimatedButton>
     </div>
   );
 }

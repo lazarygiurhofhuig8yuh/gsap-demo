@@ -1,7 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-evenly;
   align-items: center;
   background-color: #fff5e3;
   height: 100vh;
@@ -14,56 +14,26 @@
 button{
   background-color: none;
   border-radius: 5px;
-  padding: 10px 30px;
+  padding: 30px;
+  width: 200px;
+  height: 200px;
   font-size: 2rem;
   color: #bd0404;
   border-color: #bd0404;
 }
 
-button:hover{
-  background-color: #bd0404;
-  color: white;
-}
-
-.box{
-  width: 400px;
-  height: 400px;
-  background-color: #db0a0a;
-}
-.container{
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
-}
-.container div{
-  width: 200px;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
-.rect1{
-  background-color: red;
-  color: white;
-}
-.rect2 {
-  background-color: yellow;
-  color: black;
-  
-}
-.rect3 {
-  background-color: green;
-  color: white;
-}
-.rect4 {
-  
+.blue{
   background-color: blue;
-  color: orange;
+  border-color: blue;
+  color: white;
 }
-.stalactite{
-  background-size: cover;
-  width:200px;
-  height: 120px
+.red{
+  background-color: red;
+  border-color: red;
+  color: black;
+}
+.green{
+  background-color: green;
+  border-color: green;
+  color: yellow;
 }
