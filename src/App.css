@@ -30,3 +30,33 @@ button:hover{
   height: 400px;
   background-color: #db0a0a;
 }
+.container{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.container div{
+  width: 200px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.rect1{
+  background-color: red;
+  color: white;
+}
+.rect2 {
+  background-color: blue;
+  color: orange;
+}
+.rect3 {
+  background-color: yellow;
+  color: black;
+}
+.rect4 {
+  background-color: green;
+  color: white;
+}
