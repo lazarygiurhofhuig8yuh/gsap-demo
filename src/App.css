@@ -1,7 +1,7 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   background-color: #fff5e3;
   height: 100vh;
@@ -61,4 +61,9 @@ button:hover{
   
   background-color: blue;
   color: orange;
+}
+.stalactite{
+  background-size: cover;
+  width:200px;
+  height: 120px
 }
