@@ -4,8 +4,22 @@ import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
 export default function Rectangles() {
+  const frequencies = [8, 4, 2, 1];
   useGSAP(() => {
-    //add tweens here to animate the rectangles
+    //red rect
+    gsap.to(".rect1", {
+      y: -100, // bounce height
+      duration: 1 / frequencies[0], //bounce duration
+      repeat: -1, //negative repeat values means repeat forever
+      yoyo: true, //means what it sounds
+      ease: "power1.inOut", //ease creates the springy effect (look up other ease types)
+    });
+
+    //yellow
+
+    //green
+
+    //blue
   });
   return (
     <div className="container">
