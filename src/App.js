@@ -8,7 +8,9 @@ function App() {
         src="https://cdn.britannica.com/15/15-050-B075588A/Flag-Kenya.jpg"
         alt="Kenyan Flag"
       />
-      <AnimatedHeader classNames={"message"}>Karibu Kenya</AnimatedHeader>
+      <AnimatedHeader classNames={"message"}>Karibu</AnimatedHeader>
+      <AnimatedHeader classNames={"message"}>Kenya</AnimatedHeader>
+
       <img
         src="https://cdn.britannica.com/15/15-050-B075588A/Flag-Kenya.jpg"
         alt="Kenyan Flag"

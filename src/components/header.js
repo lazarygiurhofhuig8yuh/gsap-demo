@@ -1,27 +1,38 @@
+import React from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 export default function AnimatedHeader({ classNames, children }) {
+  const headerRef = useRef(); //usefull if this component is used multiple times in the website
   useGSAP(() => {
-    gsap.from(".animated-header", {
-      //here we define the animation (change opacity and the y position)
-      duration: 1.25,
-      y: -20,
+    const el = headerRef.current;
+    const splitWords = el.querySelectorAll(".animated-header span"); //we are splitting the words into letters and animating each letter one at a time
+
+    // Letters animation
+    gsap.from(splitWords, {
       opacity: 0,
-      // here we define the scroll trigger configuration
+      stagger: 0.1, // Add a delay between each letter
       scrollTrigger: {
-        trigger: ".animated-header", //the 'trigger' is the element used as a reference point for the scroll position which will trigger the animation
-        start: "top center", //used to fine tone the reference point (the top of the header touches the center of the view, start the animation)
-        markers: false, //when true, displays markers for the start and end positions
+        trigger: el,
+        start: "top center",
+        end: "top +=200",
+        scrub: true, // Smooth animation with scroll position
+        markers: true,
       },
     });
   });
 
   return (
-    //attach the variable to the click event listener
-    <h1 className={`animated-header ${classNames}`}>{children}</h1>
+    <h1 className={`animated-header ${classNames}`} ref={headerRef}>
+      {children.split("").map((letter, index) => (
+        <span key={index} style={{ display: "inline-block" }}>
+          {letter}
+        </span>
+      ))}
+    </h1>
   );
 }
