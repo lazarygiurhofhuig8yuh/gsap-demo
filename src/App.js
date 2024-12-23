@@ -1,12 +1,18 @@
 import "./App.css";
 
-import AnimatedButton from "./components/button";
+import AnimatedHeader from "./components/header";
 function App() {
   return (
     <div className="App">
-      <AnimatedButton classNames={"blue button"}>Blue</AnimatedButton>
-      <AnimatedButton classNames={"red button"}> Red</AnimatedButton>
-      <AnimatedButton classNames={"green button"}>Green</AnimatedButton>
+      <img
+        src="https://cdn.britannica.com/15/15-050-B075588A/Flag-Kenya.jpg"
+        alt="Kenyan Flag"
+      />
+      <AnimatedHeader classNames={"message"}>Karibu Kenya</AnimatedHeader>
+      <img
+        src="https://cdn.britannica.com/15/15-050-B075588A/Flag-Kenya.jpg"
+        alt="Kenyan Flag"
+      />
     </div>
   );
 }
