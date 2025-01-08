@@ -19,7 +19,7 @@ export default function Stalactite() {
         yoyo: true,
         ease: "power1.inOut",
       }
-    ); //add second tween here to make it fal
+    )
   });
 
   return (
