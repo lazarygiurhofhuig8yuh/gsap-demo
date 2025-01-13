@@ -1,12 +1,13 @@
 import "./App.css";
 
 import AnimatedButton from "./components/button";
+import AnimatedButton2 from "./components/button2";
+
 function App() {
   return (
     <div className="App">
-      <AnimatedButton classNames={"blue button"}>Blue</AnimatedButton>
-      <AnimatedButton classNames={"red button"}> Red</AnimatedButton>
-      <AnimatedButton classNames={"green button"}>Green</AnimatedButton>
+      <AnimatedButton2 classNames={"blue button"}>Blue</AnimatedButton2>
+      
     </div>
   );
 }

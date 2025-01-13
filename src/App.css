@@ -37,3 +37,8 @@ button{
   border-color: green;
   color: yellow;
 }
+.orange{
+  background-color: orange;
+  border-color: orange;
+  color: white;
+}
