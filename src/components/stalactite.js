@@ -19,7 +19,11 @@ export default function Stalactite() {
         yoyo: true,
         ease: "power1.inOut",
       }
-    )
+    ).to(".stalactite" , {
+      y: 600,
+      duration: 1,
+      ease: "bounce.out",
+    })
   });
 
   return (
@@ -27,7 +31,6 @@ export default function Stalactite() {
       <div
         className="stalactite"
         style={{
-          backgroundImage: `url(${stalactiteImage})`,
           backgroundSize: "cover",
         }}
       ></div>

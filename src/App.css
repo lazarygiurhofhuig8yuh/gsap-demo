@@ -63,6 +63,7 @@ button:hover{
   color: orange;
 }
 .stalactite{
+  background-color: blue;
   background-size: cover;
   width:200px;
   height: 120px
